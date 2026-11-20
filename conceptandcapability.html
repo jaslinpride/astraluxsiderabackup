@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AstraLux | Concept &amp; Capability</title>
+<script>
+try{var t=localStorage.getItem('astralux-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}
+/* Desktop fit: scale the one-frame layout to the screen (designed at 1440 x 880). Phones and tablets are not scaled. */
+(function(){function fit(){var w=innerWidth,h=innerHeight,z=1;if(w>900){z=Math.min(w/1440,h/880);z=Math.max(.7,Math.min(1.75,z))}document.documentElement.style.setProperty('--z',z);document.documentElement.classList.toggle('scaled',w>900)}fit();addEventListener('resize',fit)})();
+</script>
+<link rel="stylesheet" href="conceptandcapability.css">
+</head>
+<body>
+<div class="app">
+
+  <!-- ============ LEFT NAVIGATION ============ -->
+  <aside class="side" id="side" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="AstraLux Sidera I home">
+      <svg class="mark" viewBox="0 0 64 40" aria-hidden="true">
+        <ellipse cx="30" cy="22" rx="27" ry="12" transform="rotate(-18 30 22)" class="mk-orbit"/>
+        <path d="M28 8 L31 19 L42 22 L31 25 L28 36 L25 25 L14 22 L25 19Z" class="mk-star"/>
+        <path d="M44 34 L49 12 L54 34 M46 26 H52" class="mk-ant"/>
+        <circle cx="55" cy="10" r="2.2" class="mk-sat"/>
+      </svg>
+      <span class="word"><b>ASTRALUX</b><span>SIDERA I</span></span>
+    </a>
+
+    <div class="profile">
+      <span class="avatar" aria-hidden="true">TP</span>
+      <span class="who"><b>Teriana Jaslin Pride</b><span>Engineering Lead</span></span>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html"><i>⌂</i>Home</a>
+      <a href="programmanagement.html"><i>▤</i>Program Management</a>
+      <a href="conceptandcapability.html" class="active" aria-current="page"><i>◎</i>Concept &amp; Capability</a>
+      <a href="testandevaluation.html"><i>✓</i>Test &amp; Evaluation</a>
+      <a href="vendorconfigurations.html"><i>⚙</i>Vendor Configurations</a>
+      <a href="administrativeconcerns.html"><i>☰</i>Administrative Concerns</a>
+    </nav>
+
+    <div class="side-foot">
+      <button class="mode" id="mode" type="button" aria-label="Switch colour mode">
+        <span class="mode-ic" aria-hidden="true"></span><span class="mode-lb">Dark mode</span>
+      </button>
+      <p class="copy">© AstraLux 2026</p>
+    </div>
+  </aside>
+
+  <!-- ============ CONCEPT & CAPABILITY DASHBOARD ============ -->
+  <main class="main">
+    <header class="top">
+      <button class="menu" id="menu" type="button" aria-label="Open menu"><img src="hamburger.png" alt="" onerror="this.setAttribute('data-broken','')"><span class="menu-fallback">☰</span></button>
+      <h1>Concept &amp; Capability <span>Define and refine the Sidera I concept</span></h1>
+      <div class="chips">
+        <span class="chip">Status <b>20 Nov 2026</b></span>
+        <span class="chip">Sprint <b>30</b> · PI 5</span>
+        <span class="chip">Next review <b>CDR 30 Nov</b></span>
+        <span class="chip"><b>5</b> live models · <b>2</b> slots reserved</span>
+      </div>
+    </header>
+
+    <section class="grid" id="grid">
+      <article class="t models" aria-label="System models">
+        <div class="th"><span class="i i-indigo">M</span><b>System Models</b><div class="tabs" role="tablist" aria-label="Model"><button type="button" role="tab" class="tab on" data-tab="uc" data-src="sidera-uc-model.html" aria-selected="true">Use Cases</button><button type="button" role="tab" class="tab" data-tab="act" data-src="sidera-activity-model.html" aria-selected="false">Activities</button><button type="button" role="tab" class="tab" data-tab="fn" data-src="sidera-function-model.html" aria-selected="false">Functions</button><button type="button" role="tab" class="tab" data-tab="sm" data-src="sidera-state-machine-model.html" aria-selected="false">State Machines</button></div><div class="tb"><button class="ib" type="button" data-embed="sidera-uc-model.html" data-title="Use Cases" title="Open the tool full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9.5 2H14v4.5M6.5 14H2V9.5M14 2 9 7M2 14l5-5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="lb">Tool</span></button><button class="ib doc" type="button" data-doc="uc" title="Open the document full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1.5h5.5L13 5v9.5H4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.5 1.5V5H13M6 8h5M6 10.5h5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="lb">Document</span></button></div></div>
+        <div class="frame" data-base="1150"><span class="ld">Loading model…</span><iframe data-tab="uc" data-src="sidera-uc-model.html" title="Use Cases embedded tool"></iframe><iframe data-tab="act" data-src="sidera-activity-model.html" title="Activities embedded tool" hidden></iframe><iframe data-tab="fn" data-src="sidera-function-model.html" title="Functions embedded tool" hidden></iframe><iframe data-tab="sm" data-src="sidera-state-machine-model.html" title="State Machines embedded tool" hidden></iframe></div>
+      </article>
+      <article class="t srs" aria-label="System Subsystem Specification">
+        <div class="th"><span class="i i-rust">R</span><b>System Subsystem Specification</b><small>DOORS-style</small><div class="tb"><button class="ib" type="button" data-embed="sidera-srs-doors.html" data-title="System Subsystem Specification" title="Open the tool full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9.5 2H14v4.5M6.5 14H2V9.5M14 2 9 7M2 14l5-5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="lb">Tool</span></button><button class="ib doc" type="button" data-doc="srs" title="Open the document full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1.5h5.5L13 5v9.5H4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.5 1.5V5H13M6 8h5M6 10.5h5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="lb">Document</span></button></div></div>
+        <div class="frame" data-base="1200"><span class="ld">Loading System Subsystem Specification…</span><iframe data-src="sidera-srs-doors.html" title="System Subsystem Specification embedded tool" loading="lazy"></iframe></div>
+      </article>
+      <article class="t conops" aria-label="Concept of Operations">
+        <div class="th"><span class="i i-xl">C</span><b>Concept of Operations</b><small>Word</small><div class="tb"><button class="ib doc" type="button" data-doc="conops" title="Open the document full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1.5h5.5L13 5v9.5H4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.5 1.5V5H13M6 8h5M6 10.5h5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="lb">Document</span></button></div></div>
+        <div class="slot"><em>Embed slot reserved</em><b>Operational scenario viewer (OV-1)</b><span>The embedded feature goes here. Open the document from the corner button.</span></div>
+        <div class="facts"><div><b>11</b><span>Pages</span></div><div><b>Rev 0</b><span>Baseline</span></div></div>
+      </article>
+      <article class="t fts" aria-label="Formal Trade Studies">
+        <div class="th"><span class="i i-jira">T</span><b>Formal Trade Studies</b><small>Word</small><div class="tb"><button class="ib doc" type="button" data-doc="fts" title="Open the document full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1.5h5.5L13 5v9.5H4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.5 1.5V5H13M6 8h5M6 10.5h5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="lb">Document</span></button></div></div>
+        <div class="slot"><em>Embed slot reserved</em><b>Weighted trade matrix</b><span>The embedded feature goes here. Open the document from the corner button.</span></div>
+        <div class="facts"><div><b>19</b><span>Pages</span></div><div><b>Rev 0</b><span>Baseline</span></div></div>
+      </article>
+    </section>
+  </main>
+</div>
+
+<!-- Full-screen tool -->
+<div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="ot">
+  <div class="oh"><b id="ot"></b><a id="ol" href="#" target="_blank" rel="noopener">Open full page ↗</a><button id="ox" type="button">✕ Close (Esc)</button></div>
+  <iframe id="of" title="Embedded tool"></iframe>
+</div>
+
+<!-- Document viewer: searchable, shrinkable, movable -->
+<div class="dim" id="dim"></div>
+<section class="dv" id="dv" role="dialog" aria-labelledby="dvt">
+  <header class="dvh" id="dvh">
+    <span class="grip" aria-hidden="true">⋮⋮</span><b id="dvt">Document</b><span class="pg" id="dvp"></span>
+    <button class="wb" type="button" data-w="min" title="Shrink">–</button>
+    <button class="wb" type="button" data-w="max" title="Full screen">▢</button>
+    <button class="wb x" type="button" data-w="close" title="Close (Esc)">✕</button>
+  </header>
+  <div class="dvt">
+    <label class="sr"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m10.5 10.5 3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><input id="q" type="search" placeholder="Search this document" aria-label="Search this document" autocomplete="off"></label>
+    <span class="hits" id="hits"></span>
+    <button class="tbtn" type="button" id="hp" title="Previous match" disabled>↑</button>
+    <button class="tbtn" type="button" id="hn" title="Next match" disabled>↓</button>
+    <button class="tbtn" type="button" data-z="-1" title="Zoom out">−</button><span class="zl" id="zl">100%</span><button class="tbtn" type="button" data-z="1" title="Zoom in">+</button>
+    <a class="tbtn" id="dl" href="#" download title="Download PDF">⤓</a>
+  </div>
+  <div class="dvb" id="dvb"></div>
+  <span class="rz" id="rz" aria-hidden="true"></span>
+</section>
+<div class="scrim" id="scrim"></div>
+
+<script src="conceptandcapability.js"></script>
+</body>
+</html>

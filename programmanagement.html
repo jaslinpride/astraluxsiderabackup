@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AstraLux | Program Management</title>
+<script>
+try{var t=localStorage.getItem('astralux-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}
+/* Desktop fit: scale the one-frame layout to the screen (designed at 1440 x 880). Phones and tablets are not scaled. */
+(function(){function fit(){var w=innerWidth,h=innerHeight,z=1;if(w>900){z=Math.min(w/1440,h/880);z=Math.max(.7,Math.min(1.75,z))}document.documentElement.style.setProperty('--z',z);document.documentElement.classList.toggle('scaled',w>900)}fit();addEventListener('resize',fit)})();
+</script>
+<link rel="stylesheet" href="programmanagement.css">
+</head>
+<body>
+<div class="app">
+
+  <!-- ============ LEFT NAVIGATION ============ -->
+  <aside class="side" id="side" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="AstraLux Sidera I home">
+      <svg class="mark" viewBox="0 0 64 40" aria-hidden="true">
+        <ellipse cx="30" cy="22" rx="27" ry="12" transform="rotate(-18 30 22)" class="mk-orbit"/>
+        <path d="M28 8 L31 19 L42 22 L31 25 L28 36 L25 25 L14 22 L25 19Z" class="mk-star"/>
+        <path d="M44 34 L49 12 L54 34 M46 26 H52" class="mk-ant"/>
+        <circle cx="55" cy="10" r="2.2" class="mk-sat"/>
+      </svg>
+      <span class="word"><b>ASTRALUX</b><span>SIDERA I</span></span>
+    </a>
+
+    <div class="profile">
+      <span class="avatar" aria-hidden="true">TP</span>
+      <span class="who"><b>Teriana Jaslin Pride</b><span>Engineering Lead</span></span>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html"><i>⌂</i>Home</a>
+      <a href="programmanagement.html" class="active" aria-current="page"><i>▤</i>Program Management</a>
+      <a href="conceptandcapability.html"><i>◎</i>Concept &amp; Capability</a>
+      <a href="testandevaluation.html"><i>✓</i>Test &amp; Evaluation</a>
+      <a href="vendorconfigurations.html"><i>⚙</i>Vendor Configurations</a>
+      <a href="administrativeconcerns.html"><i>☰</i>Administrative Concerns</a>
+    </nav>
+
+    <div class="side-foot">
+      <button class="mode" id="mode" type="button" aria-label="Switch colour mode">
+        <span class="mode-ic" aria-hidden="true"></span><span class="mode-lb">Dark mode</span>
+      </button>
+      <p class="copy">© AstraLux 2026</p>
+    </div>
+  </aside>
+
+  <!-- ============ PROGRAM MANAGEMENT DASHBOARD ============ -->
+  <main class="main">
+    <header class="top">
+      <button class="menu" id="menu" type="button" aria-label="Open menu"><img src="hamburger.png" alt="" onerror="this.setAttribute('data-broken','')"><span class="menu-fallback">☰</span></button>
+      <h1>Program Management <span>Plan, execute and oversee Sidera I</span></h1>
+      <div class="chips">
+        <span class="chip">Status <b>20 Nov 2026</b></span>
+        <span class="chip">Sprint <b>30</b> · PI 5</span>
+        <span class="chip">Next review <b>CDR 30 Nov</b></span>
+        <span class="chip"><b>3</b> live tools · <b>3</b> slots reserved</span>
+      </div>
+    </header>
+
+    <section class="grid" id="grid">
+      <article class="t wbs" aria-label="Work Breakdown Structure">
+        <div class="th"><span class="i i-jira">J</span><b>Work Breakdown Structure</b><small>Jira · Agile</small><div class="tb"><button class="ib" type="button" data-embed="sidera-wbs-jira.html" data-title="Work Breakdown Structure" title="Open the tool full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9.5 2H14v4.5M6.5 14H2V9.5M14 2 9 7M2 14l5-5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="lb">Tool</span></button><button class="ib doc" type="button" data-doc="wbs" title="Open the document full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1.5h5.5L13 5v9.5H4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.5 1.5V5H13M6 8h5M6 10.5h5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="lb">Document</span></button></div></div>
+        <div class="frame" data-base="1150"><span class="ld">Loading Jira · Agile…</span><iframe data-src="sidera-wbs-jira.html" title="Work Breakdown Structure embedded tool" loading="lazy"></iframe></div>
+      </article>
+      <article class="t ims" aria-label="Integrated Master Schedule">
+        <div class="th"><span class="i i-xl">P</span><b>Integrated Master Schedule</b><small>MS Project</small><div class="tb"><button class="ib" type="button" data-embed="sidera-ims-schedule.html" data-title="Integrated Master Schedule" title="Open the tool full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9.5 2H14v4.5M6.5 14H2V9.5M14 2 9 7M2 14l5-5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="lb">Tool</span></button><button class="ib doc" type="button" data-doc="ims" title="Open the document full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1.5h5.5L13 5v9.5H4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.5 1.5V5H13M6 8h5M6 10.5h5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="lb">Document</span></button></div></div>
+        <div class="frame" data-base="1150"><span class="ld">Loading MS Project…</span><iframe data-src="sidera-ims-schedule.html" title="Integrated Master Schedule embedded tool" loading="lazy"></iframe></div>
+      </article>
+      <article class="t risk" aria-label="Risk &amp; Opportunity Assessment">
+        <div class="th"><span class="i i-tab">R</span><b>Risk &amp; Opportunity Assessment</b><small>Tableau</small><div class="tb"><button class="ib" type="button" data-embed="sidera-risk-dashboard.html" data-title="Risk &amp; Opportunity Assessment" title="Open the tool full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9.5 2H14v4.5M6.5 14H2V9.5M14 2 9 7M2 14l5-5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="lb">Tool</span></button><button class="ib doc" type="button" data-doc="risk" title="Open the document full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1.5h5.5L13 5v9.5H4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.5 1.5V5H13M6 8h5M6 10.5h5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="lb">Document</span></button></div></div>
+        <div class="frame" data-base="1150"><span class="ld">Loading Tableau…</span><iframe data-src="sidera-risk-dashboard.html" title="Risk &amp; Opportunity Assessment embedded tool" loading="lazy"></iframe></div>
+      </article>
+      <article class="t sow" aria-label="Statement of Work">
+        <div class="th"><span class="i i-indigo">S</span><b>Statement of Work</b><small>Word</small><div class="tb"><button class="ib doc" type="button" data-doc="sow" title="Open the document full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1.5h5.5L13 5v9.5H4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.5 1.5V5H13M6 8h5M6 10.5h5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="lb">Document</span></button></div></div>
+        <div class="slot"><em>Embed slot reserved</em><b>Deliverables (CDRL) tracker</b><span>The embedded feature goes here. Open the document from the corner button.</span></div>
+        <div class="facts"><div><b>8</b><span>Pages</span></div><div><b>Rev 0</b><span>Baseline</span></div></div>
+      </article>
+      <article class="t semp" aria-label="Systems Engineering Mgmt Plan">
+        <div class="th"><span class="i i-teal">E</span><b>Systems Engineering Mgmt Plan</b><small>Word</small><div class="tb"><button class="ib doc" type="button" data-doc="semp" title="Open the document full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1.5h5.5L13 5v9.5H4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.5 1.5V5H13M6 8h5M6 10.5h5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="lb">Document</span></button></div></div>
+        <div class="slot"><em>Embed slot reserved</em><b>Process &amp; tailoring navigator</b><span>The embedded feature goes here. Open the document from the corner button.</span></div>
+        <div class="facts"><div><b>10</b><span>Pages</span></div><div><b>Rev 0</b><span>Baseline</span></div></div>
+      </article>
+      <article class="t evm" aria-label="Earned Value Management">
+        <div class="th"><span class="i i-amber">$</span><b>Earned Value Management</b><small>Excel</small><div class="tb"><button class="ib doc" type="button" data-doc="evm" title="Open the document full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1.5h5.5L13 5v9.5H4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.5 1.5V5H13M6 8h5M6 10.5h5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="lb">Document</span></button></div></div>
+        <div class="slot"><em>Embed slot reserved</em><b>Cost &amp; schedule performance (CPI / SPI)</b><span>The embedded feature goes here. Open the document from the corner button.</span></div>
+        <div class="facts"><div><b>8</b><span>Pages</span></div><div><b>Rev 0</b><span>Baseline</span></div></div>
+      </article>
+    </section>
+  </main>
+</div>
+
+<!-- Full-screen tool -->
+<div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="ot">
+  <div class="oh"><b id="ot"></b><a id="ol" href="#" target="_blank" rel="noopener">Open full page ↗</a><button id="ox" type="button">✕ Close (Esc)</button></div>
+  <iframe id="of" title="Embedded tool"></iframe>
+</div>
+
+<!-- Document viewer: searchable, shrinkable, movable -->
+<div class="dim" id="dim"></div>
+<section class="dv" id="dv" role="dialog" aria-labelledby="dvt">
+  <header class="dvh" id="dvh">
+    <span class="grip" aria-hidden="true">⋮⋮</span><b id="dvt">Document</b><span class="pg" id="dvp"></span>
+    <button class="wb" type="button" data-w="min" title="Shrink">–</button>
+    <button class="wb" type="button" data-w="max" title="Full screen">▢</button>
+    <button class="wb x" type="button" data-w="close" title="Close (Esc)">✕</button>
+  </header>
+  <div class="dvt">
+    <label class="sr"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m10.5 10.5 3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><input id="q" type="search" placeholder="Search this document" aria-label="Search this document" autocomplete="off"></label>
+    <span class="hits" id="hits"></span>
+    <button class="tbtn" type="button" id="hp" title="Previous match" disabled>↑</button>
+    <button class="tbtn" type="button" id="hn" title="Next match" disabled>↓</button>
+    <button class="tbtn" type="button" data-z="-1" title="Zoom out">−</button><span class="zl" id="zl">100%</span><button class="tbtn" type="button" data-z="1" title="Zoom in">+</button>
+    <a class="tbtn" id="dl" href="#" download title="Download PDF">⤓</a>
+  </div>
+  <div class="dvb" id="dvb"></div>
+  <span class="rz" id="rz" aria-hidden="true"></span>
+</section>
+<div class="scrim" id="scrim"></div>
+
+<script src="programmanagement.js"></script>
+</body>
+</html>

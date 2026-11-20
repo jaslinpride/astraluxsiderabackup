@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AstraLux Sidera I | Digital Engineering Platform</title>
+<script>
+try{var t=localStorage.getItem('astralux-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}
+/* Desktop fit: scale the one-frame layout to the screen (designed at 1440 x 880). Phones and tablets are not scaled. */
+(function(){function fit(){var w=innerWidth,h=innerHeight,z=1;if(w>900){z=Math.min(w/1440,h/880);z=Math.max(.7,Math.min(1.75,z))}document.documentElement.style.setProperty('--z',z);document.documentElement.classList.toggle('scaled',w>900)}fit();addEventListener('resize',fit)})();
+</script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="app">
+
+  <!-- ============ LEFT NAVIGATION ============ -->
+  <aside class="side" id="side" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="AstraLux Sidera I home">
+      <svg class="mark" viewBox="0 0 64 40" aria-hidden="true">
+        <ellipse cx="30" cy="22" rx="27" ry="12" transform="rotate(-18 30 22)" class="mk-orbit"/>
+        <path d="M28 8 L31 19 L42 22 L31 25 L28 36 L25 25 L14 22 L25 19Z" class="mk-star"/>
+        <path d="M44 34 L49 12 L54 34 M46 26 H52" class="mk-ant"/>
+        <circle cx="55" cy="10" r="2.2" class="mk-sat"/>
+      </svg>
+      <span class="word"><b>ASTRALUX</b><span>SIDERA I</span></span>
+    </a>
+
+    <div class="profile">
+      <span class="avatar" aria-hidden="true">TP</span>
+      <span class="who"><b>Teriana Jaslin Pride</b><span>Engineering Lead</span></span>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="active" aria-current="page"><i>⌂</i>Home</a>
+      <a href="programmanagement.html"><i>▤</i>Program Management</a>
+      <a href="conceptandcapability.html"><i>◎</i>Concept &amp; Capability</a>
+      <a href="testandevaluation.html"><i>✓</i>Test &amp; Evaluation</a>
+      <a href="vendorconfigurations.html"><i>⚙</i>Vendor Configurations</a>
+      <a href="administrativeconcerns.html"><i>☰</i>Administrative Concerns</a>
+    </nav>
+
+    <div class="side-foot">
+      <button class="mode" id="mode" type="button" aria-label="Switch colour mode">
+        <span class="mode-ic" aria-hidden="true"></span><span class="mode-lb">Dark mode</span>
+      </button>
+      <p class="copy">© AstraLux 2026</p>
+    </div>
+  </aside>
+
+  <!-- ============ DASHBOARD ============ -->
+  <main class="main">
+    <header class="top">
+      <button class="menu" id="menu" type="button" aria-label="Open menu"><img src="hamburger.png" alt="" onerror="this.setAttribute('data-broken','')"><span class="menu-fallback">☰</span></button>
+      <h1>Program Command Center <span>Sidera I · Digital Engineering Platform</span></h1>
+      <div class="chips">
+        <span class="chip">Status <b>20 Nov 2026</b></span>
+        <span class="chip">Sprint <b>30</b> · PI 5</span>
+        <span class="chip">Next review <b>CDR 30 Nov</b></span>
+        <span class="chip" id="clk"></span>
+      </div>
+    </header>
+
+    <section class="grid" id="grid">
+      <!-- Mission status -->
+      <article class="t feat hero" tabindex="0" data-open="sidera-ims-schedule.html#21" data-title="Integrated Master Schedule · CDR">
+        <div class="th"><span class="i i-amber">★</span><b>Mission status</b><small>Program pulse</small></div>
+        <div class="cd"><span id="cdn">10</span><small>days to CDR</small></div>
+        <p class="mut">Critical Design Review · Mon 30 Nov 2026 · dry run Mon 23 Nov · *TBR</p>
+        <div class="tl" id="htl"></div>
+        <div class="mcount" id="mcount"></div>
+        <div class="pulse">
+          <div class="bad"><b>0.79</b><span>SPI (EVM)</span></div>
+          <div class="warn"><b>0.96</b><span>CPI · EAC $4.47M</span></div>
+          <div class="warn"><b>+6 d</b><span>PRR forecast 19 Aug 27</span></div>
+          <div class="bad"><b>2</b><span>High risks · RK-04, RK-25</span></div>
+          <div class="warn"><b>4</b><span>Open defects</span></div>
+          <div class="ok"><b>26/32</b><span>Artifacts released</span></div>
+        </div>
+        <span class="go">Open schedule ↗</span>
+      </article>
+
+      <!-- Digital twin -->
+      <article class="t feat twin" tabindex="0" data-open="sidera-digital-twin.html" data-title="Digital Twin">
+        <div class="th"><span class="i i-teal">DT</span><b>Digital twin</b><small>3-D · 17 parts</small></div>
+        <svg class="sat" viewBox="-150 -62 300 175" aria-hidden="true">
+          <defs><linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E8A33D" stop-opacity=".55"/><stop offset="1" stop-color="#E8A33D" stop-opacity="0"/></linearGradient></defs>
+          <ellipse class="orbit" cx="0" cy="-10" rx="146" ry="40"/>
+          <path class="beam" d="M-20,12 L-70,110 L70,110 L20,12z" fill="url(#beam)"/>
+          <g class="bob">
+            <g class="panel"><rect x="-140" y="-26" width="44" height="34" rx="2"/><rect x="-92" y="-26" width="44" height="34" rx="2"/><rect x="48" y="-26" width="44" height="34" rx="2"/><rect x="96" y="-26" width="44" height="34" rx="2"/></g>
+            <rect x="-48" y="-11" width="8" height="4" class="yoke"/><rect x="40" y="-11" width="8" height="4" class="yoke"/>
+            <rect x="-26" y="-34" width="52" height="46" rx="3" class="bus"/>
+            <circle cx="10" cy="-40" r="6" class="dish"/>
+            <rect x="-62" y="12" width="124" height="7" rx="1.5" class="sar"/>
+          </g>
+          <text x="0" y="104" text-anchor="middle" class="cap">DT-01 … DT-17 · linked to SYS, UAF and DoDAF IDs</text>
+        </svg>
+        <div class="kr"><div class="k"><b class="c-teal">17</b><span>Parts</span></div><div class="k"><b>14</b><span>Components</span></div><div class="k"><b>14</b><span>Interfaces</span></div><div class="k"><b class="c-amber">35%</b><span>Twin build</span></div></div>
+        <span class="go">Spin it ↗</span>
+      </article>
+
+      <!-- Schedule -->
+      <article class="t ims" tabindex="0" data-open="sidera-ims-schedule.html" data-title="Integrated Master Schedule (Project-style)">
+        <div class="th"><span class="i i-blue">P</span><b>Integrated Master Schedule</b><small>Project-style · 62 tasks</small></div>
+        <svg id="gantt" class="fill" aria-label="Schedule summary"></svg>
+        <span class="go">Open Gantt ↗</span>
+      </article>
+
+      <!-- Risk -->
+      <article class="t risk" tabindex="0" data-open="sidera-risk-dashboard.html" data-title="Risk Assessment (Tableau-style)">
+        <div class="th"><span class="i i-rust">R</span><b>Risk register</b><small>Tableau-style</small></div>
+        <div class="body"><svg id="heat" viewBox="0 0 120 120" class="sq" aria-label="Risk matrix"></svg>
+          <div class="kcol"><div class="k"><b>25</b><span>Open risks</span></div><div class="k"><b class="c-rust">2</b><span>High</span></div><div class="k"><b>$2.20M</b><span>Expected exposure</span></div></div></div>
+        <span class="go">Explore ↗</span>
+      </article>
+
+      <!-- Test -->
+      <article class="t test" tabindex="0" data-open="sidera-temp-testrail.html" data-title="TEMP Test Management (TestRail-style)">
+        <div class="th"><span class="i i-green">T</span><b>Test management</b><small>TestRail</small></div>
+        <svg id="donut" viewBox="0 0 100 100" class="fill" aria-label="Test results"></svg>
+        <p class="mut center">115 cases · 14 runs · TE-01 starts 28 Dec</p>
+        <span class="go">Run tests ↗</span>
+      </article>
+
+      <!-- Jira -->
+      <article class="t jira" tabindex="0" data-open="sidera-wbs-jira.html" data-title="WBS Agile Board (Jira-style)">
+        <div class="th"><span class="i i-jira">J</span><b>WBS agile board · Sprint 30</b><small>Jira-style · 665 issues</small></div>
+        <div class="body"><svg id="burn" class="burn" aria-label="Sprint burndown"></svg>
+          <div class="kcol"><div class="kr"><div class="k"><b>37</b><span>Points left of 75</span></div><div class="k"><b>52</b><span>Avg velocity</span></div></div>
+            <div class="teams" id="teams"></div><p class="mut">Goal: close CDR design package; burn down DR-0001 to DR-0004</p></div></div>
+        <span class="go">Open board ↗</span>
+      </article>
+
+      <!-- Design tool -->
+      <article class="t isdt" tabindex="0" data-open="sidera-design-tool.html" data-title="Integrated System Design Tool">
+        <div class="th"><span class="i i-xl">fx</span><b>System design tool</b><small>8 linked budgets</small></div>
+        <div class="bars" id="budgets"></div>
+        <span class="go">Change inputs ↗</span>
+      </article>
+
+      <!-- CAD -->
+      <article class="t cad" tabindex="0" data-open="sidera-cad-viewer.html" data-title="CAD Drawing Viewer (AutoCAD-style)">
+        <div class="th"><span class="i i-rust">A</span><b>CAD drawings</b><small>AutoCAD</small></div>
+        <svg viewBox="0 0 160 110" class="fill" aria-hidden="true">
+          <g fill="none" stroke-width=".9"><rect x="2" y="2" width="156" height="106" stroke="#666"/><rect x="104" y="84" width="54" height="24" stroke="#888"/>
+          <rect x="40" y="22" width="48" height="44" stroke="#fff"/><rect x="32" y="40" width="5" height="40" stroke="#FF9F1A"/><rect x="91" y="40" width="5" height="40" stroke="#FF9F1A"/><rect x="38" y="68" width="52" height="5" stroke="#FF9F1A"/>
+          <rect x="54" y="14" width="20" height="6" stroke="#fff"/><rect x="47" y="30" width="16" height="12" stroke="#FFFF00" stroke-dasharray="2 1.4"/><circle cx="74" cy="40" r="9" stroke="#FFFF00" stroke-dasharray="2 1.4"/>
+          <path d="M64,10 V82 M28,44 H100" stroke="#FF3B3B" stroke-dasharray="6 1.5 1.5 1.5"/><path d="M32,90 H96 M32,86 v8 M96,86 v8" stroke="#00FFFF"/><circle cx="118" cy="30" r="4" stroke="#FF00FF"/><path d="M114.5,31 L88,38" stroke="#FF00FF"/></g>
+          <text x="64" y="100" fill="#00FFFF" font-size="5.5" text-anchor="middle">1460 ENVELOPE</text><text x="106" y="93" fill="#3CDC6A" font-size="5.5">SID-1000</text><text x="106" y="101" fill="#3CDC6A" font-size="4.5">REV A · 1:15</text><text x="118" y="31.8" fill="#FF00FF" font-size="4.5" text-anchor="middle">1</text>
+        </svg>
+        <p class="mut">6 drawings · SID-1000 → 5000 · DXF export</p>
+        <span class="go">Open .dwg ↗</span>
+      </article>
+
+      <!-- Collaboration -->
+      <article class="t collab" tabindex="0" data-open="sidera-collab-bento.html" data-title="Collaboration: Outlook · Teams · SharePoint">
+        <div class="th"><span class="apps"><span class="a-ol">O</span><span class="a-tm">T</span><span class="a-sp">S</span></span><b>Collaboration</b><small>Mail · chat · minutes</small></div>
+        <div class="list" id="meet"></div>
+        <div class="kr"><div class="k"><b>52</b><span>Minutes filed</span></div><div class="k"><b class="c-rust">44</b><span>Open actions</span></div><div class="k"><b>3</b><span>Unread mail</span></div></div>
+        <span class="go">Open workspace ↗</span>
+      </article>
+
+      <!-- DOORS -->
+      <article class="t doors" tabindex="0" data-open="sidera-srs-doors.html" data-title="SRS Requirements Module (DOORS-style)">
+        <div class="th"><span class="i i-indigo">D</span><b>SRS · DOORS</b><small>97 reqs</small></div>
+        <div class="sb"><i style="width:13.4%" class="s-ink"></i><i style="width:52.6%" class="s-indigo"></i><i style="width:34%" class="s-sky"></i></div>
+        <p class="mut">13 primary · 51 secondary · 33 tertiary</p>
+        <div class="kr end"><div class="k"><b class="c-amber">42</b><span>TBD / TBR</span></div><div class="k"><b>48</b><span>By test</span></div></div>
+        <span class="go">Trace ↗</span>
+      </article>
+
+      <!-- Models -->
+      <article class="t models" tabindex="0" data-open="sidera-uc-model.html" data-title="Model Viewers (Cameo-style)">
+        <div class="th"><span class="i i-violet">M</span><b>Model set (Cameo-style)</b><small>4 viewers</small></div>
+        <div class="mm">
+          <div data-open="sidera-uc-model.html" data-title="Use Case Model"><b>64</b><span>Use cases</span></div>
+          <div data-open="sidera-activity-model.html" data-title="Activity Model"><b>50</b><span>Activities</span></div>
+          <div data-open="sidera-function-model.html" data-title="Function Model"><b>153</b><span>Functions</span></div>
+          <div data-open="sidera-state-machine-model.html" data-title="State Machine Model"><b>50</b><span>States</span></div>
+        </div>
+      </article>
+
+      <!-- PLM -->
+      <article class="t plm" tabindex="0" data-open="sidera-plm.html" data-title="Sidera PLM (Windchill-style)">
+        <div class="th"><span class="i i-wc">W</span><b>PLM · config</b><small>Windchill</small></div>
+        <div class="sb"><i style="width:81.25%" class="s-green"></i><i style="width:9.4%" class="s-amber"></i><i style="width:9.4%" class="s-grey"></i></div>
+        <p class="mut">26 released · 3 review · 3 in work</p>
+        <div class="kr end"><div class="k"><b>32</b><span>Artifacts</span></div><div class="k"><b class="c-rust">4</b><span>Open CRs</span></div></div>
+        <span class="go">Browse ↗</span>
+      </article>
+    </section>
+  </main>
+</div>
+
+<!-- Tool overlay -->
+<div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="ot">
+  <div class="oh"><b id="ot"></b><a id="ol" href="#" target="_blank" rel="noopener">Open full page ↗</a><button id="ox" type="button">✕ Close (Esc)</button></div>
+  <iframe id="of" title="Embedded tool"></iframe>
+</div>
+<div class="scrim" id="scrim"></div>
+<script src="index.js"></script>
+</body>
+</html>
